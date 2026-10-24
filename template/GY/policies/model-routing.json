@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 2,
+  "mode": "uniform",
+  "defaultModel": "auto",
+  "advisorOnly": true,
+  "capabilityRouting": {
+    "strong": "default",
+    "reasoning": "default",
+    "coding": "default",
+    "fast": "default"
+  },
+  "fallback": "default",
+  "notes": "GY recommends capability classes. The active Codex or Claude surface resolves available model names."
+}

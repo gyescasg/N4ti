@@ -1,0 +1,10 @@
+# OpenCode plugin migration work (unrelated to N4ti)
+tests/plugin-v2.test.mjs
+odd/tasks/opencode-v2-plugins.md
+
+# Generated runtime artifacts
+**/.runtime/
+
+# Local agent tooling state
+.atl/
+.engram/

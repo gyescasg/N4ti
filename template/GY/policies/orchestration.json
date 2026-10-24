@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 2,
+  "mainAgentRole": "orchestrator",
+  "canonicalMemoryWriter": "orchestrator",
+  "openspecIsRequirementSourceWhenPresent": true,
+  "delegateWhen": ["specialization", "high-risk review", "independent parallel work"],
+  "doNotDelegateWhen": ["task is smaller than delegation overhead", "work requires the same files sequentially"],
+  "subagentRules": [
+    "receive only a scoped task packet",
+    "do not edit GY canonical memory",
+    "return files, tests, risks, decisions, and a concise summary"
+  ],
+  "resultTokenCap": 800,
+  "stageGates": ["spec", "plan", "implementation", "review", "verification", "release-approval", "memory-close"]
+}

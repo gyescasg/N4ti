@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 2,
+  "strategy": "dynamic-bench",
+  "maxParallel": 2,
+  "canonicalMemoryWriter": "orchestrator",
+  "roles": [
+    {"id":"orchestrator","enabled":true,"purpose":"Plan, delegate, integrate, verify, and update GY.","triggers":["always"],"capability":"strong"},
+    {"id":"product-spec","enabled":true,"purpose":"Clarify outcomes and OpenSpec acceptance criteria.","triggers":["new-feature","ambiguous-requirement"],"capability":"reasoning"},
+    {"id":"architect","enabled":true,"purpose":"Evaluate boundaries and durable technical decisions.","triggers":["new-project","cross-module","technology-change"],"capability":"strong"},
+    {"id":"implementer","enabled":true,"purpose":"Implement scoped code changes and tests.","triggers":["code-change"],"capability":"coding"},
+    {"id":"reviewer","enabled":true,"purpose":"Find regressions, risks, and missing tests.","triggers":["code-change","high-risk"],"capability":"strong"},
+    {"id":"qa","enabled":true,"purpose":"Design and run proportionate verification.","triggers":["user-facing","integration","release"],"capability":"coding"},
+    {"id":"security","enabled":true,"purpose":"Review auth, secrets, permissions, and sensitive data.","triggers":["auth","payments","personal-data","security"],"capability":"strong"},
+    {"id":"devops","enabled":true,"purpose":"Prepare CI, infrastructure, release, and rollback evidence.","triggers":["deployment","infrastructure","release"],"capability":"coding"}
+  ]
+}

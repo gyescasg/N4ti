@@ -1,0 +1,7 @@
+{
+  "schemaVersion": 2,
+  "detected": false,
+  "path": null,
+  "mode": "reference-only",
+  "rule": "OpenSpec owns requirements; GY owns orchestration state, retrieval, assignments, and evidence."
+}

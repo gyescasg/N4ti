@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 2,
+  "tokenBudget": 5000,
+  "aliases": [
+    ["architecture", "arquitectura"],
+    ["components", "componentes"],
+    ["dependencies", "dependencias"],
+    ["commands", "comandos"],
+    ["test", "tests", "prueba", "pruebas"],
+    ["build", "compilar", "compilacion"],
+    ["run", "ejecutar"],
+    ["current", "actual"],
+    ["status", "state", "estado"],
+    ["next", "siguiente"],
+    ["rules", "reglas"],
+    ["project", "proyecto"],
+    ["product", "producto"],
+    ["constraints", "restricciones"],
+    ["task", "tarea"],
+    ["decision", "decisiones"],
+    ["policy", "policies", "politica", "politicas"],
+    ["agents", "agentes"],
+    ["model", "modelo"],
+    ["autonomy", "autonomia"],
+    ["orchestration", "orquestacion"],
+    ["strategy", "estrategia"],
+    ["technology", "tecnologia"]
+  ],
+  "documents": [
+    {
+      "id": "CORE",
+      "level": 0,
+      "type": "core",
+      "status": "active",
+      "priority": "critical",
+      "tags": ["project", "rules"],
+      "affects": ["all"],
+      "path": "GY/core.md",
+      "alwaysLoad": true
+    },
+    {
+      "id": "STATE",
+      "level": 1,
+      "type": "state",
+      "status": "active",
+      "priority": "critical",
+      "tags": ["current", "status", "next"],
+      "affects": ["all"],
+      "path": "GY/current-state.md",
+      "alwaysLoad": true
+    },
+    {
+      "id": "COMMANDS",
+      "level": 2,
+      "type": "operations",
+      "status": "active",
+      "priority": "high",
+      "tags": ["commands", "test", "build", "run"],
+      "affects": ["all"],
+      "path": "GY/commands.md",
+      "alwaysLoad": false
+    },
+    {
+      "id": "ARCHITECTURE",
+      "level": 3,
+      "type": "knowledge",
+      "status": "active",
+      "priority": "normal",
+      "tags": ["architecture", "components", "dependencies"],
+      "affects": [],
+      "path": "GY/knowledge/architecture.md",
+      "alwaysLoad": false
+    },
+    {
+      "id": "PROJECT-PROFILE",
+      "level": 1,
+      "type": "profile",
+      "status": "active",
+      "priority": "high",
+      "tags": ["idea", "product", "stack", "constraints"],
+      "affects": ["all"],
+      "path": "GY/project-profile.json",
+      "alwaysLoad": false
+    },
+    {
+      "id": "TECH-STRATEGY",
+      "level": 3,
+      "type": "strategy",
+      "status": "active",
+      "priority": "normal",
+      "tags": ["technology", "architecture", "stack", "recommendation"],
+      "affects": ["architecture"],
+      "path": "GY/technology-strategy.md",
+      "alwaysLoad": false
+    },
+    {
+      "id": "STAFF",
+      "level": 2,
+      "type": "agents",
+      "status": "active",
+      "priority": "high",
+      "tags": ["agents", "staff", "roles", "delegation"],
+      "affects": ["orchestration"],
+      "path": "GY/agents/staff.json",
+      "alwaysLoad": false
+    },
+    {
+      "id": "AUTONOMY",
+      "level": 0,
+      "type": "policy",
+      "status": "active",
+      "priority": "critical",
+      "tags": ["approval", "autonomy", "deployment", "security"],
+      "affects": ["all"],
+      "path": "GY/policies/autonomy.json",
+      "alwaysLoad": true
+    },
+    {
+      "id": "MODEL-ROUTING",
+      "level": 2,
+      "type": "policy",
+      "status": "active",
+      "priority": "normal",
+      "tags": ["models", "routing", "cost", "reasoning"],
+      "affects": ["agents"],
+      "path": "GY/policies/model-routing.json",
+      "alwaysLoad": false
+    },
+    {
+      "id": "ORCHESTRATION",
+      "level": 1,
+      "type": "policy",
+      "status": "active",
+      "priority": "critical",
+      "tags": ["orchestrator", "subagents", "openspec", "workflow"],
+      "affects": ["all"],
+      "path": "GY/policies/orchestration.json",
+      "alwaysLoad": true
+    },
+    {
+      "id": "OPENSPEC",
+      "level": 2,
+      "type": "integration",
+      "status": "active",
+      "priority": "high",
+      "tags": ["openspec", "requirements", "specification"],
+      "affects": ["tasks"],
+      "path": "GY/integrations/openspec.json",
+      "alwaysLoad": false
+    }
+  ]
+}

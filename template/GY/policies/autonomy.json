@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 2,
+  "mode": "balanced",
+  "continueWithoutAsking": [
+    "reversible implementation details inside approved scope",
+    "tests and documentation required by the change",
+    "low-risk refactoring needed to complete the task"
+  ],
+  "askBefore": [
+    "scope or contract changes",
+    "durable architecture or technology changes",
+    "handling secrets, personal data, payments, or permissions",
+    "recurring cost or new paid service",
+    "destructive or difficult-to-reverse action",
+    "merge, release, or production deployment"
+  ],
+  "productionApprovalRequired": true,
+  "mergeApprovalRequired": true
+}
